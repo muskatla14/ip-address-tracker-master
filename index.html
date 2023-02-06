@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <section class="form-section">
+        <h1>Ip address tracker</h1>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Search for any IP address or domain"
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </section>
+      <section class="data-info">
+        <div class="data-info__ip-address">
+          <p>IP Address</p>
+          <h2>197.445.212.448</h2>
+        </div>
+        <div class="data-info__location">
+          <p>Location</p>
+          <h2>11000 Belgrade</h2>
+        </div>
+        <div class="data-info__timezone">
+          <p>Timezone</p>
+          <h2>UTC - 5:00</h2>
+        </div>
+        <div class="data-info__isp">
+          <p>Isp</p>
+          <h2>SpaceX StarLink</h2>
+        </div>
+      </section>
+      <section class="map-section"></section>
+    </main>
+    <!-- add offset value dynamically using the API -->
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

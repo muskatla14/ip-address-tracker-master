@@ -1,0 +1,17 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: $font-size;
+}
+
+.app {
+    display: grid;
+}
+
