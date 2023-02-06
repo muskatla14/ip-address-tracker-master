@@ -13,5 +13,108 @@ body {
 
 .app {
     display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
 }
 
+
+.form-section {
+    background-image: url('/images/pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__heading {
+        color:#fff;
+        text-transform: capitalize;
+        font-weight: 500; 
+        margin-top: 30px;
+    }
+
+    &__form {
+        display: flex;  
+
+        input[type ="text"] {
+            padding: 10px 20px;
+            width: 350px;
+            border: none;
+            border-radius: 10px 0 0 10px;
+            outline: none;
+        }
+
+
+        input[type = "submit"] {
+            background: $very-dar-gray;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .btn {
+            position: relative;
+        }
+
+        .arrow {
+            position: absolute;
+            left: 40%;
+            top: 30%;
+        }
+    }
+}
+
+.data-info {
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+    height: 150px;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__card {
+        flex: 1 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        gap: 20px;
+        position: relative;
+
+
+        p {
+            color: $dark-gray;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+    }
+
+    &__ip-address::after, &__location::after, &__timezone::after {
+        content: '';
+            position: absolute;
+            left: 0;
+            top: 25%;
+            height: 80px;
+            width: 100%;
+            border-right: 2px solid $dark-gray;
+    }
+}
+
+
+.map-section {
+    background: red;
+    grid-row: 2 / 4;
+}

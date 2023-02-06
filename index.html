@@ -28,29 +28,32 @@
   <body>
     <main class="app">
       <section class="form-section">
-        <h1>Ip address tracker</h1>
-        <form action="">
+        <h1 class="form-section__heading">IP address tracker</h1>
+        <form class="form-section__form">
           <input
             type="text"
             placeholder="Search for any IP address or domain"
           />
-          <input type="submit" value="submit" />
+          <div class="btn">
+            <input type="submit" value="           " />
+            <img class="arrow" src="/images/icon-arrow.svg" alt="" />
+          </div>
         </form>
       </section>
       <section class="data-info">
-        <div class="data-info__ip-address">
+        <div class="data-info__card data-info__ip-address">
           <p>IP Address</p>
           <h2>197.445.212.448</h2>
         </div>
-        <div class="data-info__location">
+        <div class="data-info__card data-info__location">
           <p>Location</p>
           <h2>11000 Belgrade</h2>
         </div>
-        <div class="data-info__timezone">
+        <div class="data-info__card data-info__timezone">
           <p>Timezone</p>
           <h2>UTC - 5:00</h2>
         </div>
-        <div class="data-info__isp">
+        <div class="data-info__card data-info__isp">
           <p>Isp</p>
           <h2>SpaceX StarLink</h2>
         </div>
