@@ -1,0 +1,27 @@
+@include for-mobile {
+    .form-section__form {
+        width: 72%;
+        justify-content: center;
+    }
+    .data-info {
+        flex-direction: column;
+        text-align: center;
+        top: 34%;
+        width: 72%;
+        font-size: 12px;
+
+        &__card {
+            padding: 10px 0;
+            gap: 0;
+        }
+
+        &__ip-address::after, &__location::after, &__timezone::after {
+            content: none;
+        }
+
+        p {
+            padding: 5px 0;
+        }
+
+    }
+}

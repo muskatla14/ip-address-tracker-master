@@ -6,3 +6,9 @@ $dark-gray: hsl(0, 0%, 59%);
 
 $font-stack: 'Rubik', sans-serif;
 $font-size: 18px;
+
+@mixin for-mobile {
+    @media (max-width: 600px){
+        @content;
+    }
+}
