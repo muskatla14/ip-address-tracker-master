@@ -21,7 +21,7 @@ body {
 
 
 .form-section {
-    background-image: url('/images/pattern-bg.png');
+    background-image: url('../images/pattern-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -55,7 +55,7 @@ body {
             border-radius: 0 10px 10px 0;
             height: 100%;
             cursor: pointer;
-            background-image: url('/images/icon-arrow.svg');
+            background-image: url('../images/icon-arrow.svg');
             background-repeat: no-repeat;
             background-position: center;
         }
